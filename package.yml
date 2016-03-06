@@ -1,6 +1,6 @@
 name       : dukto
 version    : 6.0
-release    : 1
+release    : 2
 source     :
     - http://stroblindustries.com/solus-tarballs/dukto-6.0.tar.xz : f0c390db228fe942ccbca04c0296304e3097aeda2c8984923d5634afaf8ba481
 license    : GPL-2.0
