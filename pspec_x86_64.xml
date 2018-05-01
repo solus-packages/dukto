@@ -2,34 +2,35 @@
     <Source>
         <Name>dukto</Name>
         <Packager>
-            <Name>Ikey Doherty</Name>
-            <Email>ikey@solus-project.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Packager>
-        <License>GPL-2.0</License>
-        <Summary xml:lang="en">A simple, fast and multi-platform file transfer tool for LAN users.</Summary>
+        <License>GPL-2.0-or-later</License>
+        <PartOf>network.util</PartOf>
+        <Summary xml:lang="en">A simple, fast and multi-platform file transfer tool for LAN users</Summary>
         <Description xml:lang="en">A simple, fast and multi-platform file transfer tool for LAN users.
 </Description>
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>dukto</Name>
-        <Summary xml:lang="en">A simple, fast and multi-platform file transfer tool for LAN users.</Summary>
+        <Summary xml:lang="en">A simple, fast and multi-platform file transfer tool for LAN users</Summary>
         <Description xml:lang="en">A simple, fast and multi-platform file transfer tool for LAN users.
 </Description>
         <PartOf>network.util</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/usr/share/pixmaps</Path>
-            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/applications/dukto.desktop</Path>
+            <Path fileType="data">/usr/share/pixmaps/dukto.png</Path>
         </Files>
     </Package>
     <History>
-        <Update release="3">
-            <Date>2016-03-09</Date>
+        <Update release="4">
+            <Date>2018-04-30</Date>
             <Version>6.0</Version>
             <Comment>Packaging update</Comment>
-            <Name>Ikey Doherty</Name>
-            <Email>ikey@solus-project.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Update>
     </History>
 </PISI>

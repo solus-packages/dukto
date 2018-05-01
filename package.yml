@@ -1,20 +1,20 @@
 name       : dukto
 version    : 6.0
-release    : 3
+release    : 4
 source     :
-    - http://stroblindustries.com/solus-tarballs/dukto-6.0.tar.xz : f0c390db228fe942ccbca04c0296304e3097aeda2c8984923d5634afaf8ba481
-license    : GPL-2.0
-summary    : A simple, fast and multi-platform file transfer tool for LAN users.
+    - https://stroblindustries.com/solus-tarballs/dukto-6.0.tar.xz : f0c390db228fe942ccbca04c0296304e3097aeda2c8984923d5634afaf8ba481
+license    : GPL-2.0-or-later
+component  : network.util
+summary    : A simple, fast and multi-platform file transfer tool for LAN users
 description: |
     A simple, fast and multi-platform file transfer tool for LAN users.
 builddeps  :
     - pkgconfig(QtCore)
+setup      : |
+    %qmake4
 build      : |
-    ln -s /usr/bin/moc-qt4 /usr/bin/moc
-    ln -s /usr/bin/rcc-qt4 /usr/bin/rcc
-    qmake-qt4 .
     %make
 install    : |
-    install -Dm755 $srcdir/dukto $installdir/usr/bin/dukto
-    install -Dm644 $srcdir/dukto.desktop $installdir/usr/share/applications/dukto.desktop
-    install -Dm644 $srcdir/dukto.png $installdir/usr/share/pixmaps/dukto.png
+    install -Dm00755 dukto $installdir/usr/bin/dukto
+    install -Dm00644 dukto.desktop $installdir/usr/share/applications/dukto.desktop
+    install -Dm00644 dukto.png $installdir/usr/share/pixmaps/dukto.png
